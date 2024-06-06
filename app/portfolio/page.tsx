@@ -1,5 +1,8 @@
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
+import Projects from "@/components/projects/Projects";
 import Services from "@/components/services/Services";
+import Technologies from "@/components/technologies/Technologies";
 import React from "react";
 import {
   FaFacebook,
@@ -54,6 +57,9 @@ export default function Portfolio() {
       </div>
 
       <Services />
+      <Projects />
+      <Technologies />
+      <Footer />
     </div>
   );
 }

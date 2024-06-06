@@ -14,10 +14,10 @@ function Services() {
       Explore the diverse services I offer, tailored to bring your projects to life with expertise and precision.
       </span>
       </div>
-<div className="w-[100%] grid grid-cols-3 px-[10%]">
+<div className="w-[100%] grid grid-cols-3 px-[5%] mt-[4%] gap-6">
     {services?.map((item)=>{
         return (
-            <ServiceCard />
+            <ServiceCard item={item} />
 
         )
     })}
