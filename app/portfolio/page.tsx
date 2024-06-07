@@ -3,6 +3,7 @@ import Header from "@/components/header/Header";
 import Projects from "@/components/projects/Projects";
 import Services from "@/components/services/Services";
 import Technologies from "@/components/technologies/Technologies";
+import Link from "next/link";
 import React from "react";
 import {
   FaFacebook,
@@ -15,7 +16,7 @@ export default function Portfolio() {
     <div className="w-[100%] min-h-[100vh] pt-[1%]">
       <Header />
       {/* hero section  */}
-      <div className="w-[100%] flex flex-row  justify-between px-[3%] mt-[5%]">
+      <div className="w-[100%] flex flex-row bg-gray-100 justify-between px-[3%] py-[5%]">
         <div className="w-[50%]">
           <p className="font-bold text-[2rem] text-black">I'm Noman Farooq</p>
           <p className="font-medium text-[4rem] text-black leading-[80px]">
@@ -33,22 +34,37 @@ export default function Portfolio() {
             Development specifications.
           </p>
           <div className="flex items-center justify-start gap-2 mt-[3%]">
-            <FaFacebook
-              size={35}
-              className="border border-1 border-secondary p-[5px] rounded-[10px]"
-            />
-            <FaLinkedinIn
-              size={35}
-              className="border border-1 border-secondary p-[5px] rounded-[10px]"
-            />
-            <FaGithub
-              size={35}
-              className="border border-1 border-secondary p-[5px] rounded-[10px]"
-            />
-            <FaInstagram
-              size={35}
-              className="border border-1 border-secondary p-[5px] rounded-[10px]"
-            />
+            <a href="https://www.facebook.com/itx.xheixh/" target="blank">
+              <FaFacebook
+                size={35}
+                className="border border-1 border-secondary p-[5px] rounded-[10px] transition-transform transform hover:border-none hover:scale-110 hover:bg-primary cursor-pointer hover:text-white"
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/noman-sheikh-8b8092232/"
+              target="blank"
+            >
+              <FaLinkedinIn
+                size={35}
+                className="border border-1 border-secondary p-[5px] rounded-[10px] transition-transform transform hover:border-none hover:scale-110 hover:bg-primary cursor-pointer hover:text-white"
+              />
+            </a>
+            <a href="https://github.com/Noman-Sheikh-09" target="blank">
+              <FaGithub
+                size={35}
+                className="border border-1 border-secondary p-[5px] rounded-[10px] transition-transform transform hover:scale-110 hover:bg-primary cursor-pointer hover:border-none hover:text-white"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/__n_o_m_a_n___09/"
+              target="blank"
+            >
+              <FaInstagram
+                size={35}
+                className="border border-1 border-secondary p-[5px] rounded-[10px] transition-transform transform hover:border-none hover:scale-110 hover:bg-primary cursor-pointer hover:text-white"
+              />
+            </a>
           </div>
         </div>
         <div className="w-[50%] flex justify-center items-center">

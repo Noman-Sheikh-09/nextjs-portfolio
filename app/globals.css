@@ -31,3 +31,33 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: #ff9b4f;
+  top: 100%;
+  left: 60%;
+  transition: all 1.5s ease;
+  transform: rotate(40deg);
+  z-index: 0;
+}
+
+.service-card:hover::before {
+  top: -50%;
+  left: -50%;
+}
+
+.service-card-content {
+  position: relative;
+  z-index: 1;
+}

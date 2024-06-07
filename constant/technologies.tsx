@@ -1,7 +1,7 @@
-import { FaHtml5, FaCss3Alt,FaReact  } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt,FaReact ,FaNodeJs, FaDharmachakra  } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiNextjsFill,RiTailwindCssFill,RiSvelteLine  } from "react-icons/ri";
-import { SiMui,SiRedux } from "react-icons/si";
+import { SiMui,SiRedux,SiMongodb, SiMysql  } from "react-icons/si";
 
 
 
@@ -26,6 +26,7 @@ export const technologies = [
     percentage: "90%",
     logo:<RiNextjsFill size={100} color=""  />
   },
+  
   {
     title: "Tailwind CSS",
     percentage: "100%",
@@ -45,8 +46,15 @@ export const technologies = [
 
   },
   {
-    title: "HTML",
+    title: "Chakra UI",
     percentage: "90%",
+    logo:<FaDharmachakra  size={100} color="#07B6D3" />
+
+  },
+  {
+    title: "NodeJS",
+    percentage: "90%",
+    logo:<FaNodeJs  size={100} color="green" />
   },
   {
     title: "Material UI",
@@ -55,8 +63,9 @@ export const technologies = [
 
   },
   {
-    title: "HTML",
+    title: "MongoDB",
     percentage: "90%",
+    logo:<SiMongodb size={100} color="green"  />
   },
   {
     title: "ReactJS",
@@ -64,4 +73,12 @@ export const technologies = [
     logo:<FaReact  size={100} color="#07B6D3" />
 
   },
+ 
+  {
+    title: "MySQL",
+    percentage: "90%",
+    logo:<SiMysql  size={100} color="#00618B" />
+
+  },
+ 
 ];
