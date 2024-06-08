@@ -1,3 +1,4 @@
+import BackgroundAnimation from "@/components/background/Background";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Projects from "@/components/projects/Projects";
@@ -16,8 +17,9 @@ export default function Portfolio() {
     <div className="w-[100%] min-h-[100vh] pt-[1%]">
       <Header />
       {/* hero section  */}
-      <div className="w-[100%] flex flex-row bg-gray-100 justify-between px-[3%] py-[5%]">
-        <div className="w-[50%]">
+      {/* <BackgroundAnimation /> */}
+      <div className="w-[100%] flex xs:flex-col lg:flex-row   justify-between px-[3%] py-[5%]">
+        <div className="xs:w-[100%] lg:w-[50%]">
           <p className="font-bold text-[2rem] text-black">I'm Noman Farooq</p>
           <p className="font-medium text-[4rem] text-black leading-[80px]">
             Software
@@ -33,7 +35,7 @@ export default function Portfolio() {
             try my best to follow best practices ( DRY and SOLID ) and Software
             Development specifications.
           </p>
-          <div className="flex items-center justify-start gap-2 mt-[3%]">
+          <div className="flex items-center justify-start gap-3 mt-[3%]">
             <a href="https://www.facebook.com/itx.xheixh/" target="blank">
               <FaFacebook
                 size={35}
@@ -67,7 +69,7 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
-        <div className="w-[50%] flex justify-center items-center">
+        <div className="xs:w-[100%] lg:w-[50%] flex justify-center items-center">
           <img src="image.jpg" className="w-[60%]" />
         </div>
       </div>

@@ -16,7 +16,7 @@ function Technologies() {
           projects to life with expertise and precision.
         </span>
       </div>
-      <div className="w-[100%] grid grid-cols-5 px-[5%] mt-[4%] gap-6">
+      <div className="w-[100%] grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 px-[5%] mt-[4%] gap-6">
         {technologies?.map((item) => {
           return <TechnologyCard item={item} />;
         })}

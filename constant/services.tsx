@@ -31,4 +31,12 @@ export const services = [
     bgColor:"DodgerBlue"
 
   },
+  {
+    title: "Graphic Designer",
+    description:
+    "We can give life to product ideas and give improved user experience",
+    icon: <FaWordpressSimple  size={40} className="text-white" />,
+    bgColor:"DodgerBlue"
+
+  },
 ];

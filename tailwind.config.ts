@@ -21,6 +21,14 @@ const config: Config = {
         css:"#039BE5"
         
       },
+      screens: {
+        'xs': '480px',  // Extra small devices (phones)
+        'sm': '640px',  // Small devices (tablets)
+        'md': '768px',  // Medium devices (desktops)
+        'lg': '1024px', // Large devices (desktops)
+        'xl': '1280px', // Extra large devices (desktops)
+        '2xl': '1536px',// 2x Extra large devices (large desktops)
+      },
     },
   },
   plugins: [],
