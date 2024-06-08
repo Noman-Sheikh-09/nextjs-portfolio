@@ -26,8 +26,43 @@ function Projects() {
         </span>
       </div>
       <div className="w-[100%]  bg-black">
-
-      <ProjectSlider />
+      <div className="w-[100%] max-h-[100vh] flex  bg-[#F3F6FF] mt-[5%]">
+            <div className="w-[50%] px-[2%] ">
+              <p className="font-bold text-[2rem] text-black mt-[15%]">
+                Easy Server
+              </p>
+              <p>
+                Techloset Solution worked on Chizel app that allows you to
+                create and share your own digital art. You can use various tools
+                and brushes to draw, paint, sketch, and doodle on a blank canvas
+                or a photo. You can also use layers, filters, stickers, and text
+                to enhance your artwork. You can save your artwork as a PNG or
+                JPG file and share it with your friends and family on social
+                media platforms, such as Facebook, Instagram, Twitter, and more.
+                Techloset Solution worked on Chizel app that allows you to
+                create and share your own digital art. You can use various tools
+                and brushes to draw, paint, sketch, and doodle on a blank canvas
+                or a photo. You can also use layers, filters, stickers, and text
+                to enhance your artwork. You can save your artwork as a PNG or
+                JPG file and share it with your friends and family on social
+                media platforms, such as Facebook, Instagram, Twitter, and more.
+                Techloset Solution worked on Chizel app that allows you to
+                create and share your own digital art. You can use various tools
+                and brushes to draw, paint, sketch, and doodle on a blank canvas
+                or a photo. You can also use layers, filters, stickers, and text
+                to enhance your artwork. You can save your artwork as a PNG or
+                JPG file and share it with your friends and family on social
+                media platforms, such as Facebook, Instagram, Twitter, and more.
+              </p>
+            </div>
+            <div className="w-[50%]">
+              <img
+                src="one.jpg"
+                className="w-[100%] h-[100vh] object-contain "
+              />
+            </div>
+          </div>
+      {/* <ProjectSlider /> */}
       </div>
 
     </div>
