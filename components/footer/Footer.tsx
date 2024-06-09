@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8 mt-[5%]">
+    <footer className="bg-gray-800 text-white py-8">
     <div className="container mx-auto text-center">
       <div className="mb-4">
         <a href="https://twitter.com/yourprofile" className="mx-2 text-gray-400 hover:text-white">Twitter</a>

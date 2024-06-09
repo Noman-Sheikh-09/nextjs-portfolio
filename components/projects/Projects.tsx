@@ -15,9 +15,9 @@ import { Mousewheel, Pagination } from "swiper/modules";
 
 function Projects() {
   return (
-    <div className="w-[100%]  mt-[10%]">
+    <div className="w-[100%]  mt-[30px]">
       <div className="flex flex-col items-center">
-        <span className="font-bold text-center text-[4rem] text-primary hover:border-b border-10 border-primary">
+        <span className="font-bold text-center text-[4rem] text-pgitrimary hover:border-b border-10 border-primary">
           Work Cases
         </span>
         <span className="font-normal text-[16px] text-secondary">
@@ -26,7 +26,7 @@ function Projects() {
         </span>
       </div>
       <div className="w-[100%]  bg-black">
-      <div className="w-[100%] max-h-[100vh] flex  bg-[#F3F6FF] mt-[5%]">
+      <div className="w-[100%] max-h-[100vh] flex  bg-[#F3F6FF] mt-[20px]">
             <div className="w-[50%] px-[2%] ">
               <p className="font-bold text-[2rem] text-black mt-[15%]">
                 Easy Server

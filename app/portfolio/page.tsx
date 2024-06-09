@@ -1,4 +1,4 @@
-import BackgroundAnimation from "@/components/background/Background";
+import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Projects from "@/components/projects/Projects";
@@ -19,7 +19,7 @@ export default function Portfolio() {
       {/* hero section  */}
       {/* <BackgroundAnimation /> */}
       <div className="w-[100%] flex xs:flex-col lg:flex-row   justify-between px-[3%] py-[5%]">
-        <div className="xs:w-[100%] lg:w-[50%]">
+        <div className="xs:w-[100%] lg:w-[50%] ">
           <p className="font-bold text-[2rem] text-black">I'm Noman Farooq</p>
           <p className="font-medium text-[4rem] text-black leading-[80px]">
             Software
@@ -69,14 +69,15 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
-        <div className="xs:w-[100%] lg:w-[50%] flex justify-center items-center">
-          <img src="image.jpg" className="w-[60%]" />
+        <div className="xs:w-[100%] lg:w-[50%] flex justify-center items-center ">
+          <img src="image.jpg" className="w-[60%]  border-[5px] border-primary" />
         </div>
       </div>
 
       <Services />
       <Projects />
       <Technologies />
+      <Contact />
       <Footer />
     </div>
   );

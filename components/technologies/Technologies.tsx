@@ -6,7 +6,7 @@ import TechnologyCard from "../technologyCard/TechnologyCard";
 
 function Technologies() {
   return (
-    <div className="w-[100%] min-h-[100vh] mt-[5%]">
+    <div className="w-[100%] min-h-[100vh] mt-[20px]">
       <div className="flex flex-col items-center">
         <span className="font-bold text-center text-[4rem] text-primary hover:border-b border-10 border-primary">
           Technologies
