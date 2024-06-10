@@ -19,14 +19,16 @@ export default function Portfolio() {
     const container = document.getElementById('ball-container');
     const numberOfBalls = 10;
 
-    for (let i = 0; i < numberOfBalls; i++) {
-      const ball = document.createElement('div');
-      ball.className = 'ball';
-      ball.style.top = `${Math.random() * 100}vh`;
-      ball.style.left = `${Math.random() * 100}%`;
-      container.appendChild(ball);
+    if (container) { // Add null check here
+      for (let i = 0; i < numberOfBalls; i++) {
+        const ball = document.createElement('div');
+        ball.className = 'ball';
+        ball.style.top = `${Math.random() * 100}vh`;
+        ball.style.left = `${Math.random() * 100}%`;
+        container.appendChild(ball);
+      }
     }
-  }, []);
+}, []);
   return (
     <div className="w-[100%] min-h-[100vh] pt-[1%]" >
       <Header />
