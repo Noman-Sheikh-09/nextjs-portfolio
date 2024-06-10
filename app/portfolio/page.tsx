@@ -1,3 +1,4 @@
+"use client"
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
@@ -5,7 +6,7 @@ import Projects from "@/components/projects/Projects";
 import Services from "@/components/services/Services";
 import Technologies from "@/components/technologies/Technologies";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaFacebook,
   FaLinkedinIn,
@@ -13,13 +14,26 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 export default function Portfolio() {
+
+  useEffect(() => {
+    const container = document.getElementById('ball-container');
+    const numberOfBalls = 10;
+
+    for (let i = 0; i < numberOfBalls; i++) {
+      const ball = document.createElement('div');
+      ball.className = 'ball';
+      ball.style.top = `${Math.random() * 100}vh`;
+      ball.style.left = `${Math.random() * 100}%`;
+      container.appendChild(ball);
+    }
+  }, []);
   return (
-    <div className="w-[100%] min-h-[100vh] pt-[1%]">
+    <div className="w-[100%] min-h-[100vh] pt-[1%]" >
       <Header />
       {/* hero section  */}
       {/* <BackgroundAnimation /> */}
-      <div className="w-[100%] flex xs:flex-col lg:flex-row   justify-between px-[3%] py-[5%]">
-        <div className="xs:w-[100%] lg:w-[50%] ">
+      <div className="w-[100%] flex xs:flex-col lg:flex-row full-screen-bg justify-between px-[3%] py-[5%]" id="ball-container">
+        <div className="xs:w-[100%] lg:w-[50%] z-50">
           <p className="font-bold text-[2rem] text-black">I'm Noman Farooq</p>
           <p className="font-medium text-[4rem] text-black leading-[80px]">
             Software
@@ -70,9 +84,11 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="xs:w-[100%] lg:w-[50%] flex justify-center items-center ">
-          <img src="image.jpg" className="w-[60%]  border-[5px] border-primary" />
+          <img src="image.jpg" className="w-[60%]  border-[5px] border-primary dance-animation hover:rotate-[15deg] hover:transition-all hover:ease-in-out hover:duration-500" />
+          
         </div>
       </div>
+      
 
       <Services />
       <Projects />
