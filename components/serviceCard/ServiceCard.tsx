@@ -15,12 +15,12 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
   return (
-    <div className="service-card w-[100%] h-[220px] flex flex-col rounded-[10px] border-[0.5px] cursor-pointer shadow-md bg-white px-[5%] transition-transform transform hover:scale-105 hover:shadow-lg">
-      <div className="service-card-content flex justify-center items-center w-[70px] h-[70px] mt-[5%] rounded-full" style={{ backgroundColor: item.bgColor ? item?.bgColor : "" }}>
+    <div className="service-card w-[100%] h-[220px] flex flex-col rounded-[10px] border-[0.5px] cursor-pointer shadow-md bg-white px-[5%] transition-transform transform hover:scale-105 hover:shadow-lg hover:text-white">
+      <div className="service-card-content flex justify-center items-center w-[70px] h-[70px] mt-[5%] hover:text-white rounded-full" style={{ backgroundColor: item.bgColor ? item?.bgColor : "" }}>
         {item?.icon}
       </div>
-      <div className="service-card-content flex flex-col items-center justify-center mt-[5%]">
-        <p className="font-bold text-[1.2rem] text-black">{item.title}</p>
+      <div className="service-card-content flex flex-col items-center justify-center mt-[5%] hover:text-white">
+        <p className="font-bold text-[1.2rem] ">{item.title}</p>
         <p>{item.description}</p>
       </div>
     </div>

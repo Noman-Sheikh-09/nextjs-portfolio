@@ -34,13 +34,13 @@ export default function Portfolio() {
       <Header />
       {/* hero section  */}
       {/* <BackgroundAnimation /> */}
-      <div className="w-[100%] flex xs:flex-col lg:flex-row full-screen-bg justify-between px-[3%] py-[5%]" id="ball-container">
-        <div className="xs:w-[100%] lg:w-[50%] z-50">
+      <div className="w-[100%] flex flex-col lg:flex-row full-screen-bg justify-between px-[3%] py-[5%]" id="ball-container">
+        <div className="w-[100%] lg:w-[50%] z-50">
           <p className="font-bold text-[2rem] text-black">I'm Noman Farooq</p>
           <p className="font-medium text-[4rem] text-black leading-[80px]">
             Software
             <br />{" "}
-            <span className="ml-[5%] text-primary text-[5rem] font-bold">
+            <span className="ml-[5%] text-primary text-[3rem] sm:text-[5rem] font-bold">
               Developer
             </span>
           </p>

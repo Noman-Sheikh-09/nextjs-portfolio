@@ -17,10 +17,10 @@ function Projects() {
   return (
     <div className="w-[100%]  mt-[30px]">
       <div className="flex flex-col items-center">
-        <span className="font-bold text-center text-[4rem] text-pgitrimary hover:border-b border-10 border-primary">
+        <span className="font-bold text-center text-[4rem] text-primary hover:border-b border-10 border-primary">
           Work Cases
         </span>
-        <span className="font-normal text-[16px] text-secondary">
+        <span className="font-normal text-[16px] text-secondary text-center">
           Explore the diverse services I offer, tailored to bring your projects
           to life with expertise and precision.
         </span>
